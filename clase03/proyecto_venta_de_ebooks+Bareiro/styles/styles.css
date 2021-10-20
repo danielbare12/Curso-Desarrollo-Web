@@ -1,0 +1,63 @@
+/*Estilos del Main*/ 
+.logo{
+    color: darksalmon;
+    background-color: midnightblue;
+}
+
+.listaMenu li a{
+    text-decoration: none;
+    color:green;
+}
+
+h1{
+    color: gold;
+}
+
+h2 {
+    color:orange;
+}
+
+p{
+    color: chocolate;
+}
+
+#autor{
+    color:rebeccapurple;
+}
+
+/*Estilos para la seccion novedades*/
+.lista_novedades li{
+    color:red;
+}
+/*Estilos para la seccion productos*/
+
+table{
+    color:blue;
+    background-color: plum;
+}
+
+.titulos_tabla{
+    color: midnightblue;
+    background-color: pink;
+}
+
+.fila1{
+    color: midnightblue;
+    background-color: pink;
+}
+
+/*Estilos para la seccion nosotros*/
+
+.mision{
+    color:seagreen;
+}
+
+/*Estilos para la seccion contacto*/
+
+.formulario{
+    color: darkgreen;
+}
+
+.formulario div p{
+    color: darkgreen;
+}
