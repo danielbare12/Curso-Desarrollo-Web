@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Venta de libros</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">Logo</h1>
+        <nav>
+            <ul class="listaMenu">
+                <li><a href="">Inicio</a>
+                    <ul>
+                        <li><a href='#librosRecientes'>Novedades Recientes</a></li>
+                        <li><a href="#nuestrosLibros">Nuestros Productos</a></li>
+                    </ul>
+                </li>
+                <li><a href="./secciones/productos.html">Productos</a></li>
+                <li><a href="./secciones/novedades.html">Novedades</a></li>
+                <li><a href="./secciones/nosotros.html">Nosotros</a></li>
+                <li><a href="./secciones/contacto.html">Contacto</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="tituloPrincipal">Seccion Principal</h1>
+        <div>
+            <p class="carruselDeImagenes">Aqui va un Carrusel de Imagenes</p>
+        </div>
+
+        <section class="seccionRecientes" id="librosRecientes">
+            <h2>Novedades Recientes</h2>
+            <ol class="listaRecientes">
+                <li class="dune">Nuevos libros de Dune</li>
+                <li class="biografias">Nuevos libros de Biografias</li>
+            </ol>
+        </section>
+
+        <section class="seccionProductos" id="nuestrosLibros">
+            <h2>Nuestros Productos</h2>
+            <div class="juegoDeTronos">
+                <p>Vendemos el libro de Juego de Tronos</p>
+                <img src="./media/juegoTronos.jpg" alt="Aca va una tapa de Juego de Tronos" class="imagen">
+            </div>
+            <div class="harryPotter">
+                <p>Vendemos el libro de Harry Potter</p>
+                <img src="./media/harryPotter.jpg" alt="Aca va una tapa de Harry Potter" class="imagen">
+            </div>
+            <div class="agatha">
+                <p>Vendemos el libro de Agatha Christie</p>
+                <img src="./media/agathaTapa.jpg" alt="Aca va la tapa de un libro de Agatha Christie" class="imagen">
+            </div>
+            <div class="sherlockHolmes">
+                <p>Vendemos los libros de Sherlock Holmes</p>
+                <img src="./media/sherlockTapa.jpg" alt="Aca va una tapa de Sherlock Holmes" class="imagen">
+            </div>
+            <div class="juegosDelHambre">
+                <p>Vendemos el libro de los Juegos Del Hambre</p>
+                <img src="./media/juegosDelHambre.jpg" alt="Aca va una tapa de los Juegos del Hambre" class="imagen">
+            </div>
+            <div class="borges">
+                <p>Vendemos los libros de Borges</p>
+                <img src="./media/borgesTapa.jpg" alt="Aca va la tapa de un libro de Borges" class="imagen">
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p id="autor">Autor: <span>Daniel Bareiro</span></p>
+        <p><strong>Copyright</strong></p>
+        <img src="./media/whatsappIcon.png" alt="Aqui va el icono de whatsapp" id="iconoDeWp">
+    </footer>
+</body>
+
+</html>

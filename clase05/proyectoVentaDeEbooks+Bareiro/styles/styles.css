@@ -1,0 +1,229 @@
+*{
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+
+/*Estilos del Header*/ 
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: cornsilk;
+}
+
+
+.logo{
+    color: darksalmon;
+    background-color: midnightblue;
+    background-image: url("https://mdn.mozillademos.org/files/11991/startransparent.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    width: 90px;
+    height: 100px;
+    float: left;
+}
+
+.mainPrincipal{
+    background-image: url("../media/libroFondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.listaMenu{
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.listaMenu li{
+    float: left;
+}
+
+.listaMenu li a{
+    text-decoration: none;
+    background-color: cadetblue;
+    color:green;
+    display: inline-block;
+    padding: 20px;
+}
+
+/*Aca va el menu desplegable*/
+
+.listaMenu li ul{
+    position: absolute;
+    display: none;
+}
+
+.listaMenu li ul li{
+    display: block;
+}
+
+.listaMenu li:hover ul{
+    display: block;
+    background-color: cornsilk;
+}
+  
+/*--------------------------------------------*/
+/*Estilos del main*/
+
+.tituloPrincipal{
+    color: gold;
+    text-align: center;
+    background-image: url("https://mdn.mozillademos.org/files/11991/startransparent.gif");
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+
+h2 {
+    color:darkslategray;
+}
+
+.carruselDeImagenes{
+    font-style: italic;
+    font-weight: bold;
+    background-color:lightskyblue;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+/*Estilos de la seccion de productos*/
+
+.seccionRecientes{
+    background-color: darkkhaki;
+    padding: 300px 150px 300px 150px;
+    margin: 150px;
+    border: ridge 5px black;
+}
+
+.listaRecientes{
+    list-style-type: upper-roman;
+}
+
+.seccionProductos div{
+    border: groove 5px black;
+    margin-top: 30px;
+    width: 30%;
+    height: 50%;
+}
+
+.dune{
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.biografias{
+    font-size: 200%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.seccionProductos{
+    background-color: lightslategrey;
+    border: groove 5px black;
+}
+
+.juegoDeTronos{
+    
+    background-color: chocolate;
+    float: left;
+}
+
+.harryPotter{
+    
+    background-color: chocolate;
+    float: left;
+}
+
+.agatha{
+    
+    background-color: chocolate;
+    float: left;
+}
+
+.sherlockHolmes{
+    
+    background-color: chocolate;
+    float: left;
+}
+
+.juegosDelHambre{
+    
+    background-color: chocolate;
+    float: left;
+}
+
+.borges{
+    
+    background-color: chocolate;
+    float: left;
+}
+
+/*Con este estilo modifico las imagenes*/
+
+.imagen{
+    width: 180px;
+    height: 280px;
+    border: groove 5px black;
+}
+
+/*Pie de pagina*/
+
+footer{
+    background-color: lightskyblue;
+    clear: left;
+}
+
+#autor{
+    color:rebeccapurple;
+}
+
+/*Estilos para la seccion novedades*/
+
+.listaNovedades li{
+    color:orangered;
+}
+
+.listaAdentro{
+    list-style: circle inside;
+}
+
+/*Estilos para la seccion nosotros*/
+
+.mision{
+    color:brown;
+    line-height: 5;
+    background-color:lightgreen;
+    width: 25%;
+    height: 300px;
+    overflow: auto;
+}
+
+/*Estilos para la seccion contacto*/
+
+.formulario{
+    color:darkgreen;
+    background-image: url("../media/contacto.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: right;
+}
+
+.formulario div p{
+    color:darkgreen;
+}
+
+/*Estilo del icono de Whatsapp*/
+
+#iconoDeWp{
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}

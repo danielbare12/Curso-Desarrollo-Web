@@ -1,0 +1,228 @@
+
+/*Estilos del Header*/ 
+
+header{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+.logo{
+    color: darksalmon;
+    background-color: midnightblue;
+    background-image: url("https://mdn.mozillademos.org/files/11991/startransparent.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    width: 90px;
+    height: 100px;
+}
+
+.mainPrincipal{
+    background-image: url("../media/libroFondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.listaMenu{
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.listaMenu li{
+    float: left;
+}
+
+.listaMenu li a{
+    text-decoration: none;
+    background-color: cadetblue;
+    color:green;
+    display: inline-block;
+    padding: 20px;
+}
+
+/*Aca va el menu desplegable*/
+
+.listaMenu li ul{
+    position: absolute;
+    display: none;
+}
+
+.listaMenu li ul li{
+    display: block;
+}
+
+.listaMenu li:hover ul{
+    display: block;
+}
+  
+/*--------------------------------------------*/
+/*Estilos del main*/
+
+.tituloPrincipal{
+    color: gold;
+    text-align: center;
+    background-image: url("https://mdn.mozillademos.org/files/11991/startransparent.gif");
+}
+
+
+h2 {
+    color:darkslategray;
+}
+
+.carruselDeImagenes{
+    font-style: italic;
+    font-weight: bold;
+    background-color:lightskyblue;
+}
+
+/*Estilos de la seccion de recientes*/
+
+.seccionRecientes{
+    background-color: darkkhaki;
+}
+
+.seccionRecientes div{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.seccionRecientes div article{
+    flex-grow: 1;
+}
+
+.dune{
+    background-color: green;
+}
+
+.historia{
+    background-color: darkgoldenrod;
+}
+
+/*Estilos de seccion de productos*/
+
+
+.seccionProductos{
+    background-color: lightslategrey;
+}
+
+.seccionProductos div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+    height: 1000px;
+
+}
+
+.seccionProductos div article{
+    background-color: chocolate;
+    flex-basis: 400px;    
+    
+}
+
+.juegoDeTronos{
+    order: -1;
+}
+
+
+
+/*Con este estilo modifico las imagenes*/
+
+.imagen{
+    width: 180px;
+    height: 280px;
+    border: groove 5px black;
+}
+
+/*Pie de pagina*/
+
+footer{
+    background-color: lightskyblue;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#autor{
+    color:rebeccapurple;
+}
+
+/*Estilos de la pagina de productos*/
+
+.mainDeProductos{
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    height: 3000px;
+}
+
+.mainDeProductos section{
+    background-color: khaki;
+}
+
+.mainDeProductos section div{
+    background-color: blanchedalmond;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.mainDeProductos section div article{
+    background-color: burlywood;
+    margin-right: 20px;
+    margin-left: 20px;
+    border: black solid 2px;
+}
+
+/*Estilos para la pagina de novedades*/
+
+.listaNovedades{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.listaNovedades div{
+    background-color: cadetblue;
+    flex-basis: 300px;
+}
+
+
+
+/*Estilos para la pagina nosotros*/
+
+.mision{
+    color:brown;
+    line-height: 5;
+    background-color:lightgreen;
+}
+
+/*Estilos para la pagina contacto*/
+
+.formulario{
+    color:darkgreen;
+    background-image: url("../media/contacto.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: right;
+}
+
+.formulario div p{
+    color:darkgreen;
+}
+
+/*Estilo del icono de Whatsapp*/
+
+.icono{
+    width: 50px;
+    height: 50px;
+}

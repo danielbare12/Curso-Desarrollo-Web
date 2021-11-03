@@ -1,0 +1,97 @@
+*{
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+
+/*Estilos del Main*/ 
+.logo{
+    color: darksalmon;
+    background-color: midnightblue;
+    background-image: url("https://mdn.mozillademos.org/files/11991/startransparent.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: left;
+}
+
+.mainPrincipal{
+    background-image: url("../media/libroFondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.listaMenu li a{
+    text-decoration: none;
+    color:green;
+}
+
+.tituloPrincipal{
+    color: gold;
+    text-align: center;
+    background-image: url("https://mdn.mozillademos.org/files/11991/startransparent.gif");
+}
+
+
+h2 {
+    color:darkslategray;
+}
+
+.carruselDeImagenes{
+    font-style: italic;
+    font-weight: bold;
+}
+
+.seccionRecientes{
+    background-color: darkkhaki;
+}
+
+.listaRecientes{
+    list-style-type: upper-roman;
+}
+
+.seccionProductos{
+    background-color: lightslategrey;
+}
+
+
+footer{
+    background-color: lightskyblue;
+}
+
+#autor{
+    color:rebeccapurple;
+}
+
+/*Estilos para la seccion novedades*/
+.listaNovedades li{
+    color:red;
+}
+
+.listaAdentro{
+    list-style: circle inside;
+}
+/*Estilos para la seccion productos*/
+
+/*Estilos para la seccion nosotros*/
+
+.mision{
+    color:brown;
+    line-height: 5;
+    background-image: url("https://mdn.mozillademos.org/files/11991/startransparent.gif"), url("../media/libroIcono.png");
+    background-repeat: repeat-x, repeat-y;
+}
+
+/*Estilos para la seccion contacto*/
+
+.formulario{
+    color:darkgreen;
+    background-image: url("../media/contacto.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: right;
+}
+
+.formulario div p{
+    color:darkgreen;
+}

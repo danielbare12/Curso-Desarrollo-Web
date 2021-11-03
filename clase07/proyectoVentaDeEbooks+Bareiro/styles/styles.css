@@ -1,0 +1,320 @@
+
+/*Estilos del Header*/ 
+
+.logo{
+    width: 230px;
+    height: 150px;
+}
+
+.listaMenu{
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.listaMenu li{
+    
+}
+
+.listaMenu li a{
+    text-decoration: none;
+    background-color: cadetblue;
+    color:green;
+    display: inline-block;
+    padding: 20px;
+}
+
+/*Aca va el menu desplegable*/
+
+
+
+.listaMenu li ul li{
+    display: block;
+}
+
+.listaMenu li:hover ul{
+    display: block;
+}
+  
+/*--------------------------------------------*/
+/*Estilos del main*/
+
+.tituloPrincipal{
+    color: darkmagenta;
+    text-align: center;
+    background-color: lightskyblue;
+    grid-area: tituloPrincipal;
+}
+
+
+h2 {
+    color:darkslategray;
+}
+
+.carrusel{
+    grid-area: carrusel;
+}
+
+.carruselDeImagenes{
+    font-style: italic;
+    font-weight: bold;
+    background-color:lightskyblue;
+}
+
+/*Estilos de la seccion de recientes*/
+
+.seccionRecientes{
+    background-color: darkkhaki;
+    grid-area: seccionRecientes;
+}
+
+.seccionRecientes div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-items: center;
+}
+
+.seccionRecientes div article{
+    border: black 5px dashed;
+}
+
+.dune{
+    background-color: green;
+}
+
+.historia{
+    background-color: darkgoldenrod;
+}
+
+/*Estilos de seccion de productos*/
+
+
+.seccionProductos{
+    background-color: lightslategrey;
+    
+}
+
+
+
+.seccionProductos div article{
+    background-color: chocolate;
+    border: black solid 2px;
+    display: grid;
+    justify-items: center;
+    
+}
+
+.juegoDeTronos{
+    grid-area: imagen1;
+}
+
+.harryPotter{
+    grid-area: imagen2;
+}
+.agatha{
+    grid-area: imagen3;
+}
+.sherlockHolmes{
+    grid-area: imagen4;
+}
+.juegosDelHambre{
+    grid-area: imagen5;
+}
+.borges{
+    grid-area: imagen6;
+}
+
+
+
+/*Pie de pagina*/
+
+footer{
+    background-color: lightskyblue;
+    
+}
+
+#autor{
+    color:rebeccapurple;
+}
+
+/*Estilos de la pagina de productos*/
+
+.mainDeProductos{
+    background-color: grey;
+    
+}
+
+.mainDeProductos section{
+    background-color: khaki;
+}
+
+.mainDeProductos section div{
+    background-color: blanchedalmond;
+    
+}
+
+.mainDeProductos section div article{
+    background-color: burlywood;
+    margin-right: 20px;
+    margin-left: 20px;
+    border: black solid 2px;
+}
+
+/*Estilos para la pagina de novedades*/
+
+.listaNovedades{
+    
+
+}
+
+.listaNovedades div{
+    background-color: cadetblue;
+    
+}
+
+
+
+/*Estilos para la pagina nosotros*/
+
+.mision{
+    color:brown;
+    line-height: 5;
+    background-color:lightgreen;
+}
+
+/*Estilos para la pagina contacto*/
+
+.formulario{
+    color:darkgreen;
+    background-image: url("../media/contacto.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: right;
+}
+
+.formulario div p{
+    color:darkgreen;
+}
+
+/*Estilo del icono de Whatsapp*/
+
+.icono{
+    width: 50px;
+    height: 50px;
+}
+
+@media only screen and (max-width:767px){
+    
+    .listaMenu li ul{
+        position: relative;
+        display: none;
+    }
+
+    .listaMenu{
+        list-style-type: none;
+        overflow: hidden;
+        
+    }
+
+    .imagen{
+        width: 80px;
+        height: 130px;
+        border: groove 5px black;
+    }
+
+    .seccionProductos div{
+        display: grid;
+        grid-template-areas: 
+        'imagen1 imagen2'
+        'imagen3 imagen4'
+        'imagen5 imagen6';
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    
+    }
+
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px){
+    .listaMenu li ul{
+        position: absolute;
+        display: none;
+    }
+
+    .listaMenu{
+        list-style-type: none;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+    }
+
+    .seccionProductos div{
+        display: grid;
+        grid-template-areas: 
+        'imagen1 imagen2 imagen3'
+        'imagen4 imagen5 imagen6';
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        justify-items: center;
+    }
+
+    .imagen{
+        width: 180px;
+        height: 280px;
+        border: groove 5px black;
+    }
+
+    footer{
+        background-color: lightskyblue;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: space-evenly;
+    }
+    
+}
+
+@media only screen and (min-width:1024px){
+
+    .listaMenu li ul{
+        position: absolute;
+        display: none;
+    }
+
+    .listaMenu{
+        list-style-type: none;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+    }
+
+    .seccionProductos div{
+        display: grid;
+        grid-template-areas: 
+        'imagen1 imagen2 imagen3' 
+        'imagen4 imagen5 imagen6';
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        justify-items: center;
+    }
+
+    .imagen{
+        width: 180px;
+        height: 280px;
+        border: groove 5px black;
+    }
+
+    footer{
+        background-color: lightskyblue;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: space-evenly;
+    }
+
+}
