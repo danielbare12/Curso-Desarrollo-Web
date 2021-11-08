@@ -1,10 +1,28 @@
+/*Orden para guiarse:
+1.Estilos del Header
+2.menu desplegable
+3.Estilos del main
+4.Estilos de la seccion de recientes
+5.Estilos de seccion de productos
+6.Pie de pagina
+7.Estilos de la pagina de productos
+8.Estilos para la pagina de novedades
+9.Estilos para la pagina nosotros
+10.Estilos para la pagina contactos
+11.Estilos para la pantalla de un celular
+12.Estilos para la pantalla de una tablet
+13.Estilos para la pantalla de una desktop*/
 
 /*Estilos del Header*/ 
+
+body {
+    background-color: #ffcc80;
+}
 
 .logo{
     width: 230px;
     height: 150px;
-}
+} 
 
 .listaMenu{
     list-style-type: none;
@@ -13,8 +31,8 @@
 
 .listaMenu li a{
     text-decoration: none;
-    background-color: cadetblue;
-    color:green;
+    color: black;
+    background-color:#ffffb0;
     display: inline-block;
     padding: 20px;
 }
@@ -35,15 +53,31 @@
 /*Estilos del main*/
 
 .tituloPrincipal{
-    color: darkmagenta;
     text-align: center;
-    background-color: lightskyblue;
+    
+    animation-name: tituloPrincipal;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
     grid-area: tituloPrincipal;
 }
 
-
-h2 {
-    color:darkslategray;
+@keyframes tituloPrincipal{
+    0%{
+        background-color: chocolate;
+        font-family: cursive;
+    }
+    25%{
+        background-color: yellow;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    50%{
+        background-color: tomato;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    75%{
+        background-color: turquoise;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
 }
 
 .carrusel{
@@ -53,13 +87,14 @@ h2 {
 .carruselDeImagenes{
     font-style: italic;
     font-weight: bold;
-    background-color:lightskyblue;
+    background-image: linear-gradient(to right,#c77800,#ffffb0);
 }
 
 /*Estilos de la seccion de recientes*/
 
 .seccionRecientes{
-    background-color: darkkhaki;
+    background-color: #ca9b52;
+    background-image: radial-gradient(#ffffb0,#c77800);
     grid-area: seccionRecientes;
 }
 
@@ -73,31 +108,34 @@ h2 {
 
 .seccionRecientes div article{
     border: black 5px dashed;
+    background-color: #ffffb0;
+    transition: all 1s;
 }
 
-.dune{
-    background-color: green;
-}
-
-.historia{
-    background-color: darkgoldenrod;
+.seccionRecientes div article:hover{
+    transform: skew(5deg);
 }
 
 /*Estilos de seccion de productos*/
 
 
 .seccionProductos{
-    background-color: lightslategrey;
     
+    background-image: linear-gradient(to right,#F7971E,#FFD200);
 }
 
 
 
 .seccionProductos div article{
-    background-color: chocolate;
+    background-color: #ffffb0;
     border: black solid 2px;
     display: grid;
     justify-items: center;
+    transition: all 1s;
+}
+
+.seccionProductos div article:hover{
+    transform: scale(1.1,1.1);
     
 }
 
@@ -126,32 +164,27 @@ h2 {
 /*Pie de pagina*/
 
 footer{
-    background-color: lightskyblue;
-    
+    background-color: #ca9b52;
 }
 
-#autor{
-    color:rebeccapurple;
+.icono{
+    width: 50px;
+    height: 50px;
 }
+
 
 /*Estilos de la pagina de productos*/
 
 .mainDeProductos{
-    background-color: grey;
+    background-color: #ca9b52;
     
 }
 
-.mainDeProductos section{
-    background-color: khaki;
-}
 
-.mainDeProductos section div{
-    background-color: blanchedalmond;
-    
-}
+
 
 .mainDeProductos section div article{
-    background-color: burlywood;
+    background-color: #ffffb0;
     margin-right: 20px;
     margin-left: 20px;
     border: black solid 2px;
@@ -162,17 +195,16 @@ footer{
 
 
 .listaNovedades div{
-    background-color: cadetblue;
-    
+    background-color: #ffffb0;
+    transform: rotate(10deg);
 }
 
 
 /*Estilos para la pagina nosotros*/
 
 .mision{
-    color:brown;
     line-height: 5;
-    background-color:lightgreen;
+    background-color:#ffffb0;
 }
 
 /*Estilos para la pagina contacto*/
@@ -185,16 +217,20 @@ footer{
     background-position: right;
 }
 
+.formulario input:focus{
+    background-color: lightgray;
+}
+
+.formulario textarea:focus{
+    background-color: lightgray;
+}
+
 .formulario div p{
-    color:darkgreen;
+    color:#ffffb0;
 }
 
-/*Estilo del icono de Whatsapp*/
 
-.icono{
-    width: 50px;
-    height: 50px;
-}
+
 
 /*Estilos para la pantalla de un celular*/
 
@@ -296,10 +332,11 @@ footer{
     /*Pie de pagina*/
 
     footer{
-        background-color: lightskyblue;
+        background-color: #ca9b52;
         display: grid;
         grid-template-columns: 50% 50%;
         justify-content: space-evenly;
+        margin-top: 10px;
     }
 
     .mainDeProductos section div{
@@ -358,10 +395,11 @@ footer{
     /*Pie de pagina*/
 
     footer{
-        background-color: lightskyblue;
+        background-color: #ca9b52;
         display: grid;
         grid-template-columns: 50% 50%;
         justify-content: space-evenly;
+        margin-top: 10px;
     }
 
     .mainDeProductos section div{

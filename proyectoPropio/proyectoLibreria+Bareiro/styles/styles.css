@@ -1,20 +1,51 @@
+/*Orden para guiarse:
+1.Estilos del Header
+2.menu desplegable
+3.Estilos del main
+4.Estilos de la seccion de recientes
+5.Estilos de seccion de productos
+6.Pie de pagina
+7.Estilos de la pagina de productos
+8.Estilos para la pagina de novedades
+9.Estilos para la pagina nosotros
+10.Estilos para la pagina contactos
+11.Estilos para la pantalla de un celular
+12.Estilos para la pantalla de una tablet
+13.Estilos para la pantalla de una desktop*/
 
 /*Estilos del Header*/ 
 
-.logo{
-    width: 230px;
-    height: 150px;
+body {
+    background-color: #ffcc80;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
 }
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+
+.logo{
+    width: 130px;
+    height: 80px;
+} 
 
 .listaMenu{
     list-style-type: none;
     overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }
+
 
 .listaMenu li a{
     text-decoration: none;
-    background-color: cadetblue;
-    color:green;
+    color: black;
+    background-color:#ffffb0;
     display: inline-block;
     padding: 20px;
 }
@@ -34,17 +65,6 @@
 /*--------------------------------------------*/
 /*Estilos del main*/
 
-.tituloPrincipal{
-    color: darkmagenta;
-    text-align: center;
-    background-color: lightskyblue;
-    grid-area: tituloPrincipal;
-}
-
-
-h2 {
-    color:darkslategray;
-}
 
 .carrusel{
     grid-area: carrusel;
@@ -53,51 +73,50 @@ h2 {
 .carruselDeImagenes{
     font-style: italic;
     font-weight: bold;
-    background-color:lightskyblue;
+    background-image: linear-gradient(to right,#c77800,#ffffb0);
 }
 
 /*Estilos de la seccion de recientes*/
 
 .seccionRecientes{
-    background-color: darkkhaki;
+    background-color: #ca9b52;
+    
     grid-area: seccionRecientes;
 }
 
-.seccionRecientes div{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    justify-items: center;
-}
+
 
 .seccionRecientes div article{
-    border: black 5px dashed;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
-.dune{
-    background-color: green;
-}
-
-.historia{
-    background-color: darkgoldenrod;
+.seccionRecientes div article:hover{
+    transform: scale(0.95);
 }
 
 /*Estilos de seccion de productos*/
 
 
 .seccionProductos{
-    background-color: lightslategrey;
     
+    background-color: #ca9b52;
 }
 
 
 
 .seccionProductos div article{
-    background-color: chocolate;
-    border: black solid 2px;
+    background-color: #ffffb0;
+    box-shadow: 2px 2px 5px black;
     display: grid;
     justify-items: center;
+    transition: all 1s;
+    margin-bottom: 10px;
+}
+
+.seccionProductos div article:hover{
+    transform: scale(1.05,1.05);
     
 }
 
@@ -126,79 +145,84 @@ h2 {
 /*Pie de pagina*/
 
 footer{
-    background-color: lightskyblue;
-    
+    background-color: #ca9b52;
 }
-
-#autor{
-    color:rebeccapurple;
-}
-
-/*Estilos de la pagina de productos*/
-
-.mainDeProductos{
-    background-color: grey;
-    
-}
-
-.mainDeProductos section{
-    background-color: khaki;
-}
-
-.mainDeProductos section div{
-    background-color: blanchedalmond;
-    
-}
-
-.mainDeProductos section div article{
-    background-color: burlywood;
-    margin-right: 20px;
-    margin-left: 20px;
-    border: black solid 2px;
-    
-}
-
-/*Estilos para la pagina de novedades*/
-
-
-.listaNovedades div{
-    background-color: cadetblue;
-    
-}
-
-
-/*Estilos para la pagina nosotros*/
-
-.mision{
-    color:brown;
-    line-height: 5;
-    background-color:lightgreen;
-}
-
-/*Estilos para la pagina contacto*/
-
-.formulario{
-    color:darkgreen;
-    background-image: url("../media/contacto.png");
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: right;
-}
-
-.formulario div p{
-    color:darkgreen;
-}
-
-/*Estilo del icono de Whatsapp*/
 
 .icono{
     width: 50px;
     height: 50px;
 }
 
+
+/*Estilos de la pagina de productos*/
+
+.mainDeProductos{
+    background-color: #ca9b52;
+    
+}
+
+
+.mainDeProductos section div article{
+    background-color: #ffffb0;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border: black solid 2px;
+    transition: all 1s;
+    
+}
+
+.mainDeProductos section div article:hover{
+    transform: scale(1.05,1.05);
+}
+
+.mainDeProductos section{
+    margin-top: 10px;
+    border-top: #ffcc80 2px groove;
+}
+
+/*Estilos para la pagina de novedades*/
+
+
+.listaNovedades div{
+    background-color: #ffffb0;
+    box-shadow: 2px 2px 5px black;
+}
+
+
+/*Estilos para la pagina nosotros*/
+
+.nosotros div{
+    line-height: 2;
+    background-color:#ffffb0;
+}
+
+/*Estilos para la pagina contacto*/
+
+
+
+.formulario input:focus{
+    background-color: lightgray;
+}
+
+.formulario textarea:focus{
+    background-color: lightgray;
+}
+
+
+
+
+
+
 /*Estilos para la pantalla de un celular*/
 
 @media only screen and (max-width:767px){
+
+    body {
+        background-color: #ffcc80;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
     
     /*Aca va el menu desplegable*/
     .listaMenu li ul{
@@ -217,6 +241,31 @@ footer{
         height: 130px;
         border: groove 5px black;
     }
+
+    /*Estilos seccion de recientes*/
+    .seccionRecientes div{
+        
+        justify-items: center;
+    }
+    
+    .seccionRecientes div article div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .seccionRecientes div article{
+        margin-top: 10px;
+        box-shadow: 2px 2px 5px black;
+        background-color: #ffffb0;
+        transition: all 1s;
+        display: flex;
+    }
+
+    .seccionRecientes div article div p{
+        margin-left: 20px;
+    }
+
     /*Estilos de seccion de productos*/
 
     .seccionProductos div{
@@ -236,7 +285,6 @@ footer{
 
     .mainDeProductos section{
         display: grid;
-        background-color: blanchedalmond;
         grid-template-rows: 75px 1fr;
         
     }
@@ -262,6 +310,12 @@ footer{
 
 @media only screen and (min-width:768px) and (max-width:1023px){
 
+    body {
+        background-color: #ffcc80;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+
     /*Aca va el menu desplegable*/
     .listaMenu li ul{
         position: absolute;
@@ -274,6 +328,34 @@ footer{
         display: grid;
         grid-template-columns: repeat(5,1fr);
     }
+
+    /*Estilos seccion de recientes*/
+
+    .seccionRecientes div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        justify-items: center;
+    }
+    
+    .seccionRecientes div article div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .seccionRecientes div article{
+        box-shadow: 2px 2px 5px black;
+        background-color: #ffffb0;
+        transition: all 1s;
+        display: flex;
+    }
+
+    .seccionRecientes div article div p{
+        margin-left: 20px;
+    }
+
     /*Estilos de seccion de productos*/
 
     .seccionProductos div{
@@ -296,10 +378,11 @@ footer{
     /*Pie de pagina*/
 
     footer{
-        background-color: lightskyblue;
+        background-color: #ca9b52;
         display: grid;
         grid-template-columns: 50% 50%;
         justify-content: space-evenly;
+        margin-top: 10px;
     }
 
     .mainDeProductos section div{
@@ -311,8 +394,6 @@ footer{
     .listaNovedades{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        /*grid-column-gap: 10px;
-        grid-row-gap: 10px;*/
     }
     
 }
@@ -320,6 +401,11 @@ footer{
 /*Estilos para la pantalla de una Desktop*/
 
 @media only screen and (min-width:1024px){
+    body {
+        background-color: #ffcc80;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
 
     /*Aca va el menu desplegable*/
 
@@ -331,8 +417,35 @@ footer{
     .listaMenu{
         list-style-type: none;
         overflow: hidden;
+        /*display: grid;
+        grid-template-columns: repeat(5,1fr);*/
+        display: flex;
+    }
+
+    /*Estilos seccion de recientes*/
+    .seccionRecientes div{
         display: grid;
-        grid-template-columns: repeat(5,1fr);
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        justify-items: center;
+    }
+    
+    .seccionRecientes div article div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .seccionRecientes div article{
+        box-shadow: 2px 2px 5px black;
+        background-color: #ffffb0;
+        transition: all 1s;
+        display: flex;
+    }
+
+    .seccionRecientes div article div p{
+        margin-left: 20px;
     }
 
     /*Estilos de seccion de productos*/
@@ -358,10 +471,11 @@ footer{
     /*Pie de pagina*/
 
     footer{
-        background-color: lightskyblue;
+        background-color: #ca9b52;
         display: grid;
         grid-template-columns: 50% 50%;
         justify-content: space-evenly;
+        margin-top: 10px;
     }
 
     .mainDeProductos section div{
